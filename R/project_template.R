@@ -28,7 +28,7 @@ project_template <- function(path, ...) {
 
   # create basic package structure
   author <- paste0('person("FirstName", "LastName", email = "@london.gov.uk", username = "',
-                   user, '", role = c("aut", "cre")')
+                   user, '", role = c("aut", "cre"))')
 
   usethis::create_package(path,
                           fields = list(`Authors@R` = author),
