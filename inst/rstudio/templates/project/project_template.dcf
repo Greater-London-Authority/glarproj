@@ -1,6 +1,7 @@
 Binding: project_template
 Title: GLA RStudio Project template
 OpenFiles: DESCRIPTION
+Icon: gla.png
 
 Parameter: check
 Widget: CheckboxInput
