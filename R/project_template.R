@@ -1,11 +1,12 @@
 #' @title GLA R Project Template
-#' @description Function used by RStudio to create a project/package in the GLA template
+#' @description Function used by RStudio to create a project/package in the
+#' GLA template
 #' @param path Path where project should be created
 #' @param ... Other parameters supplied by RStudio UI
 #' @return A new project session will begin
 #' @details This function will be called when the user invokes the New Project
 #' wizard using the project template defined in the template file
-# at: inst/rstudio/templates/project/project_template.dcf
+#' at: inst/rstudio/templates/project/project_template.dcf
 #' @rdname project_template
 #' @export
 #' @import usethis
