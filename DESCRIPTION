@@ -1,18 +1,16 @@
 Package: glarproj
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: GLA RStudio Project Template
+Version: 0.0.0.9000
+Authors@R: person(given = "Libby", family = "Rogers", role =
+       c("aut", "cre"), email = "libby.rogers@london.gov.uk")
+Description: After installing a GLA RStudio Project Template will
+      appear in the new project wizard in RStudio
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports:
-    usethis
-Language: en-GB
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: usethis
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
