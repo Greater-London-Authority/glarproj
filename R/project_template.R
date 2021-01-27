@@ -25,11 +25,9 @@ project_template <- function(path, ...) {
 
   # user set up
   user <- Sys.getenv("USERNAME")
-  email <- paste(user, "london.gov.uk", sep = "@")
 
   # create basic package structure
-  author <- paste0('person("FirstName", "LastName", email = "',
-                   email, '" , username = "',
+  author <- paste0('person("FirstName", "LastName", email = "@london.gov.uk", username = "',
                    user, '", role = c("aut", "cre")')
 
   usethis::create_package(path,
