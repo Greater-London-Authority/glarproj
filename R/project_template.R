@@ -10,7 +10,6 @@
 #' @rdname project_template
 #' @export
 #' @import usethis
-#' @importFrom renv init
 project_template <- function(path, ...) {
 
   # ensure path exists
@@ -49,8 +48,4 @@ project_template <- function(path, ...) {
   dir.create(path = file.path(path, "outputs"))
 
   usethis::use_readme_rmd(open = FALSE)
-
-  usethis::use_testthat()
-
-  renv::init(project = path, bare = TRUE, restart = FALSE)
 }

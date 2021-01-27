@@ -2,4 +2,3 @@
 
 export(project_template)
 import(usethis)
-importFrom(renv,init)
