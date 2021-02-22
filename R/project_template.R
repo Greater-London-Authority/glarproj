@@ -12,9 +12,6 @@
 #' @import usethis
 project_template <- function(path, ...) {
 
-  # ensure path exists
-  dir.create(path, recursive = TRUE, showWarnings = FALSE)
-
   # collect inputs
   dots <- list(...)
   text <- lapply(seq_along(dots), function(i) {
@@ -38,16 +35,16 @@ project_template <- function(path, ...) {
                           fields = list(`Authors@R` = author),
                           check_name = FALSE, open = FALSE)
 
-  usethis::proj_set(path)
-
-  # add data folders
-  dir.create(path = file.path(path, "data/raw"), recursive = TRUE)
-  dir.create(path = file.path(path, "data/intermediate"))
-  dir.create(path = file.path(path, "data/processed"))
-  file.create(path = file.path(path, "data", "README.Rmd"))
-
-  # add outputs folder
-  dir.create(path = file.path(path, "outputs"))
+  usethis::local_project(path)
 
   usethis::use_readme_rmd(open = FALSE)
+
+  # add data and output dirs
+  dirs <- c("data/raw", "data/intermediate", "data/processed", "outputs")
+  for (dir in dirs) {
+    usethis::use_directory(dir)
+  }
+  # Add a data readme
+  usethis::proj_path("data/README.Rmd")
+
 }
