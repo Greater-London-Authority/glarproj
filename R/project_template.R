@@ -10,6 +10,8 @@
 #' @rdname project_template
 #' @export
 #' @import usethis
+#' @import gitignore
+#' @importFrom renv init
 project_template <- function(path, ...) {
 
   # collect inputs
