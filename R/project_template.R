@@ -45,6 +45,6 @@ project_template <- function(path, ...) {
     usethis::use_directory(dir)
   }
   # Add a data readme
-  usethis::proj_path("data/README.Rmd")
+  file.create("data/README.Rmd")
 
 }
