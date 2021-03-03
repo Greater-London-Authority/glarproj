@@ -3,27 +3,20 @@ Title: GLA RStudio Project template
 OpenFiles: DESCRIPTION
 Icon: gla.png
 
-Parameter: check
+Parameter: git
 Widget: CheckboxInput
-Label: Checkbox Input
+Label: Create a git repository?
 Default: On
 Position: left
 
-Parameter: select
-Widget: SelectInput
-Label: Select Input
-Fields: Field A, Field B, Field C
-Default: Field B
+Parameter: renv
+Widget: CheckboxInput
+Label: Use renv with this project?
+Default: On
 Position: left
 
-Parameter: text
-Widget: TextInput
-Label: Text Input
-Default: Hello, world!
-Position: right
-
-Parameter: file
-Widget: FileInput
-Label: File Input
-Default: ~/
-Position: right
+Parameter: renviron
+Widget: CheckboxInput
+Label: Create an .Renviron file to store secrets/credentials?
+Default: Off
+Position: left

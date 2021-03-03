@@ -47,4 +47,16 @@ project_template <- function(path, ...) {
   # Add a data readme
   file.create("data/README.Rmd")
 
+  ## User input
+
+  if (dots$git) {
+    usethis::use_git()
+  }
+  if (dots$renv) {
+    renv::init()
+  }
+  if (dots$renviron) {
+    file.create(".Renviron")
+  }
+
 }
