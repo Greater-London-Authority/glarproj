@@ -14,11 +14,6 @@ project_template <- function(path, ...) {
 
   # collect inputs
   dots <- list(...)
-  text <- lapply(seq_along(dots), function(i) {
-    key <- names(dots)[[i]]
-    val <- dots[[i]]
-    paste0(key, ": ", val)
-  })
 
   # user set up
   user <- Sys.getenv("USERNAME")
