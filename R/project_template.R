@@ -42,6 +42,15 @@ project_template <- function(path, ...) {
   # Add a data readme
   file.create("data/README.Rmd")
 
+  # Setup gitignore (even if not settng up a git repo)
+  gitignore::gi_write_gitignore(gitignore::gi_fetch_templates("R"))
+  additional_gitignore <- c("",
+                            "# Data and output directories",
+                            "data/*",
+                            "!data/README*",
+                            "outputs/*")
+  write(additional_gitignore, ".gitignore", append = TRUE)
+
   ## User input
 
   if (dots$git) {
