@@ -54,7 +54,7 @@ project_template <- function(path, ...) {
   write(additional_gitignore, ".gitignore", append = TRUE)
 
   ## User input
-
+  dots <- list(...)
   if (dots$git) {
     usethis::use_git()
   }
