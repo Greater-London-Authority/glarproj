@@ -57,7 +57,7 @@ project_template <- function(path, ...) {
   ## User input
   dots <- list(...)
   if (dots$git) {
-    usethis::use_git()
+    usethis:::git_init()
   }
   if (dots$renv) {
     renv::init()
