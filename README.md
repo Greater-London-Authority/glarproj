@@ -59,8 +59,7 @@ Whether to use git for version control for this project. More
 information on using git with R can be found
 [here](https://happygitwithr.com/).
 
-If this option is selected a git repository will be created and the user
-will be prompted about whether they want to make an initial commit.
+If this option is selected a git repository will be created.
 
 ### Use `renv` with this project?
 
