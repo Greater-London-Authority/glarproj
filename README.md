@@ -24,28 +24,28 @@ Project” wizard in RStudio.
 
 ![](inst/project_wizard.PNG)
 
-The template is set up to create the bare bones of an R package, but is
-also a good layout for a stand alone project that isn’t going to become
-a full package.
+The template is set up to create the bare bones of an R package, but it
+also works for a stand alone project that isn’t going to become a full
+package.
 
 ## Project layout
 
 This is the basic project layout the template will generate:
 
     {{ project_name }}               <- parent directory
-    ├───data                         <- Data lives here (all included in `.gitignore` expect README.Rmd)
+    ├───data                         <- Data lives here (all included in .gitignore expect README.Rmd)
     │   ├───processed                <- The final dataset(s)
     │   ├───intermediate             <- Intermediate data that has been transformed
     │   ├───raw                      <- The original, immutable data.
     │   └───README.Rmd               <- A README for the data
     ├───man                          <- Documentation lives here
-    ├───outputs                      <- Outputs live here (added to `.gitignore`)
+    ├───outputs                      <- Outputs live here (added to .gitignore)
     ├───R                            <- R scripts live here
     ├───.gitignore                   <- Tells git what files to exclude from version control (e.g. data, credentials etc)
     ├───{{ project-name }}.Rproj     <- Rstudio project file
     ├───README.Rmd                   <- A summary of the project
     ├───DESCRIPTION                  <- Project/package meta data. Necessary for making a package, and useful for any project
-    └───NAMESPACE                    <- Defines package `imports` and `exports` - only needed if your project is a package
+    └───NAMESPACE                    <- Defines package imports and exports - only needed if your project is a package
 
 ## Additional options
 
