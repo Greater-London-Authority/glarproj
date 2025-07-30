@@ -51,9 +51,11 @@ project_template <- function(path, ...) {
                             "# Data and output directories",
                             "data/*",
                             "!data/README*",
-                            "outputs/*")
+                            "outputs/*", 
+                            "# Mac files",
+                            ".DS_Store")
   write(additional_gitignore, ".gitignore", append = TRUE)
-
+  
   ## User input
   dots <- list(...)
   if (dots$git) {
