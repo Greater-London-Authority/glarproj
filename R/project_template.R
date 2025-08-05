@@ -53,7 +53,8 @@ project_template <- function(path, ...) {
                             "!data/README*",
                             "outputs/*", 
                             "# Mac files",
-                            ".DS_Store")
+                            ".DS_Store",
+                            "._*")
   write(additional_gitignore, ".gitignore", append = TRUE)
   
   ## User input
